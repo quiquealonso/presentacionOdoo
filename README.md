@@ -1,8 +1,20 @@
 # presentacionOdoo
-Proyecto de odoo para la presentación en clase
-En este proyecto se gestiona una empresa de construcción, en la que se trabaja por proyectos.
-Se ha utilizado el modulo de la flota para gestionar que coche esta en cada obra y que trabajadores van en ese coche
-Se ha utilizado el modulo de empleados para gestionar a estos con sus respectivos superiores
-Las cuadrillas estan compuestas por 1 operario y 3 peones
-Se ha utilizado del modulo de proyecto para gestionar las tareas que ya hay hechas, las que faltan por hacer y llevar asi un seguimiento de la obra
-Se ha utilizado el modulo de facturación para gestionar los gastos en material de la empresa y para cobrar a los clientes
+
+Proyecto de Odoo para la presentación en clase.
+
+## Descripción
+Proyecto para gestionar una empresa de construcción que trabaja por proyectos/obras.
+
+## Funcionalidades principales
+- Gestión de obras y proyectos.
+- Gestión de flota: qué coche está en cada obra y qué trabajadores van en ese coche.
+- Gestión de empleados y jerarquías (superiores).
+- Cuadrillas compuestas por 1 operario y 3 peones.
+- Gestión de tareas (realizadas y pendientes) mediante el módulo de proyecto.
+- Gestión de facturación para gastos de material y cobros a clientes.
+
+## Módulos utilizados
+- Empleados
+- Proyectos
+- Flota
+- Facturación
