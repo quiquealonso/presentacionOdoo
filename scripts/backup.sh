@@ -9,7 +9,7 @@ echo "======================================================="
 PG_CONTAINER="postgres_dev_quique"             # Nombre del contenedor de Postgres
 ODOO_CONTAINER="odoo_dev_quique"               # Nombre del contenedor de Odoo
 PG_USER="odoo"                              # Usuario de la BD Postgres
-DB_NAME="odoo"                              # Nombre de la BD a respaldar 
+DB_NAME="postgres_dev_quique"                              # Nombre de la BD a respaldar 
 BACKUP_DIR="./data/backups"                 # Directorio de backups en el host
 BACKUP_SQL="${BACKUP_DIR}/${DB_NAME}.sql"   # Ruta completa del archivo SQL de backup
 
@@ -21,7 +21,7 @@ mkdir -p "${BACKUP_DIR}"
 # Comprobar que el contenedor de Postgres está up
 if ! docker ps --format '{{.Names}}' | grep -q "^${PG_CONTAINER}$"; then
   echo "==> Arrancando Postgres..."
-  docker-compose up -d "$PG_CONTAINER"
+  docker compose up -d "$PG_CONTAINER"
 fi
 
 
